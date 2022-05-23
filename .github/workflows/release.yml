@@ -12,6 +12,6 @@ jobs:
       uses: darioblanco/release-wizard@main
       with:
         draft: true
-        token: ${{ secrets.REPO_ACESS_TOKEN_OPEN_SOURCE }}
+        token: ${{ secrets.REPO_ACCESS_TOKEN_OPEN_SOURCE }}
         withV: true
         pushTag: false
