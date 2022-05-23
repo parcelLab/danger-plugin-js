@@ -17,6 +17,9 @@ jobs:
     steps:
     - name: Checkout current git repository
       uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of REPO_ACCESS_TOKEN_OPEN_SOURCE.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Install yarn dependencies
       run: yarn install --immutable
     - name: Use Node.js
@@ -49,10 +52,9 @@ jobs:
           yq e '.version = "${{ steps.load_version.outputs.version }}"' -i package.json -j
     - name: Commit new package.json version
       run: |
-        git config --global user.email "${{ env.BOT_EMAIL }}"
-        git config --global user.name "${{ env.BOT_NAME }}"
-        git add package.json
-        git commit -m "chore: set version ${{ steps.load_version.outputs.version }} [skip ci]"
+        git config --local user.email "${{ env.BOT_EMAIL }}"
+        git config --local user.name "${{ env.BOT_NAME }}"
+        git commit -m "chore: set version ${{ steps.load_version.outputs.version }} [skip ci]" -a
     - name: Push changes to current git repository
       uses: ad-m/github-push-action@v0.6.0
       with:
