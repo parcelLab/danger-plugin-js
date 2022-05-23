@@ -1,0 +1,11 @@
+{
+  "generator-danger-plugin": {
+    "promptValues": {
+      "authorName": "parcelLab GmbH",
+      "authorEmail": "engineering@parcellab.com",
+      "githubUsername": "parcelLab",
+      "useYarn": true,
+      "useTypeScript": true
+    }
+  }
+}

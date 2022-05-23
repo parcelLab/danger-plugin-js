@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parcellab() Messages if everything is fine 1`] = `
+Array [
+  "
+## Changes
+
+### :zap: Features
+
+- \`commit 1\`
+
+### :wrench: Fixes
+
+- \`my-app1: commit 2\`
+- \`my-app: commit 4\`
+
+### :construction_worker: Maintenance
+
+- \`commit 3\`
+
+### :books: Documentation
+
+- \`my-app2: commit 4\`
+
+### :question: Uncategorized
+
+I was unable to render the category of these changes.
+Consider using a scope for more grained results.
+
+- \`no category 1\`
+- \`no category 2\`
+
+## Files
+
+- \`file1.md\`
+- \`file2.js\`
+  ",
+]
+`;
+
+exports[`parcellab() Removes duplicates from same commit type 1`] = `
+Array [
+  "
+## Changes
+
+### :zap: Features
+
+- \`commit 1\`
+
+### :wrench: Fixes
+
+- \`my-app1: commit 2\`
+- \`my-app: commit 4\`
+
+### :construction_worker: Maintenance
+
+- \`commit 3\`
+
+### :books: Documentation
+
+- \`my-app2: commit 4\`
+
+### :nail_care: Style
+
+- \`format files\`
+
+## Files
+
+- \`file1.md\`
+- \`file2.js\`
+  ",
+]
+`;

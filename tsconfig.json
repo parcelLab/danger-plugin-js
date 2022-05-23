@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "pretty": true,
+    "strictNullChecks": true,
+    "declaration": true
+  },
+  "lib": ["es2017"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "dangerfile.ts"],
+  "exclude": ["dangerfile.ts", "node_modules", "dist"]
+}
