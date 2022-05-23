@@ -17,7 +17,7 @@
     "parcellab"
   ],
   "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -b tsconfig.build.json",
     "lint": "eslint ./src/**/*.ts",
