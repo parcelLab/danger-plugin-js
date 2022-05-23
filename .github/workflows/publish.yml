@@ -42,6 +42,8 @@ jobs:
       with:
         cmd: |
           yq e '.version = "${{ steps.load_version.outputs.version }}"' -i package.json -j
+    - name: Run build
+      run: yarn build
     - name: Publish NPM package
       uses: JS-DevTools/npm-publish@v1
       with:
