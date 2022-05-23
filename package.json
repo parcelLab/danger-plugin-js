@@ -19,7 +19,7 @@
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -b tsconfig.build.json",
     "lint": "eslint ./src/**/*.ts",
     "prepare": "yes | husky install",
     "upgrade": "yarn upgrade-interactive",
