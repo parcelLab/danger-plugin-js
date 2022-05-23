@@ -8,6 +8,9 @@ on:
       version:
         description: The version to publish
         required: true
+env:
+  BOT_EMAIL: dev.bot@parcellab.com
+  BOT_NAME: parcellab-dev-bot
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -37,13 +40,24 @@ jobs:
           VERSION=${CLEAN_TAG//v}
         fi
         echo "::set-output name=version::$VERSION"
+    - name: Run build
+      run: yarn build
     - name: Update package.json version to ${{ steps.load_version.outputs.version }}
       uses: mikefarah/yq@v4.9.0
       with:
         cmd: |
           yq e '.version = "${{ steps.load_version.outputs.version }}"' -i package.json -j
-    - name: Run build
-      run: yarn build
+    - name: Commit new package.json version
+      run: |
+        git config --global user.email "${{ env.BOT_EMAIL }}"
+        git config --global user.name "${{ env.BOT_NAME }}"
+        git add package.json
+        git commit -m "chore: set version ${{ steps.load_version.outputs.version }} [skip ci]"
+    - name: Push changes to current git repository
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        branch: main
     - name: Publish NPM package
       uses: JS-DevTools/npm-publish@v1
       with:

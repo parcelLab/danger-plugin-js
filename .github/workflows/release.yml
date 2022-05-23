@@ -12,6 +12,6 @@ jobs:
       uses: darioblanco/release-wizard@main
       with:
         draft: true
-        token: ${{ github.token }}
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
         withV: true
         pushTag: false
