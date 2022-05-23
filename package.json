@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint ./src/**/*.ts",
-    "prepare": "yes | yarn husky install",
+    "prepare": "yes | husky install",
     "upgrade": "yarn upgrade-interactive",
     "test": "jest --coverage"
   },
