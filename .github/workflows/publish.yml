@@ -56,7 +56,7 @@ jobs:
     - name: Push changes to current git repository
       uses: ad-m/github-push-action@v0.6.0
       with:
-        github_token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        github_token: ${{ secrets.REPO_ACESS_TOKEN_OPEN_SOURCE }}
         branch: main
     - name: Publish NPM package
       uses: JS-DevTools/npm-publish@v1
