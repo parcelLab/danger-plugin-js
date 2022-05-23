@@ -34,6 +34,9 @@
     "@commitlint/lint": "^17.0.0",
     "@commitlint/types": "^17.0.0"
   },
+  "peerDependencies": {
+    "danger": ">= 11"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@parcellab/danger-plugin": "*",
