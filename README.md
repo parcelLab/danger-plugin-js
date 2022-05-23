@@ -1,7 +1,17 @@
 # @parcellab/danger-plugin
 
-Set of Danger rules used to check personal PRs.
-This repository serves as an example to set up company specific rules for PR checking.
+Set of Danger rules used to check PRs in JavaScript/TypeScript codebases.
+
+This plugin allows configuration for the following events:
+
+- Conventional commits format
+- Commit scopes (useful for monorepos)
+- PR title length
+- PR title scope (useful for monorepos)
+- PR relation to JIRA issue
+- Maximum number of commits in the PR
+- Maximum number of lines in the PR
+- Maximum number of changed files in the PR
 
 ## Usage
 
