@@ -11,7 +11,7 @@ jobs:
     - name: Create release draft
       uses: darioblanco/release-wizard@main
       with:
-        draft: false
+        draft: true
         token: ${{ secrets.REPO_ACCESS_TOKEN_OPEN_SOURCE }}
         withV: true
         pushTag: false
