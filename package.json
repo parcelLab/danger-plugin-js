@@ -38,7 +38,7 @@
     "danger": ">= 11"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
+    "@commitlint/cli": "^17.0.1",
     "@parcellab/danger-plugin": "*",
     "@parcellab/eslint-config": "^0.2.2",
     "@types/is-ci": "^3",
