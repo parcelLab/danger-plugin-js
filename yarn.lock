@@ -1153,7 +1153,7 @@ __metadata:
     ts-jest: "npm:^28.0.3"
     typescript: "npm:^4.7.2"
   peerDependencies:
-    danger: ">= 11"
+    danger: ">= 11.0.7"
   languageName: unknown
   linkType: soft
 
