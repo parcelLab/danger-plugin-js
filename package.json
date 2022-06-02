@@ -42,7 +42,7 @@
     "@parcellab/danger-plugin": "*",
     "@parcellab/eslint-config": "^0.2.2",
     "@types/is-ci": "^3",
-    "@types/jest": "^27.5.2",
+    "@types/jest": "^28.1.0",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "danger": "^11.0.7",
