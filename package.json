@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=v14.19.3"
+    "node": ">=v16.15.1"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^17.0.0",
