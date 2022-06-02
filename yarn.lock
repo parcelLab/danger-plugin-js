@@ -1132,7 +1132,7 @@ __metadata:
     "@parcellab/danger-plugin": "npm:*"
     "@parcellab/eslint-config": "npm:^0.2.2"
     "@types/is-ci": "npm:^3"
-    "@types/jest": "npm:^27.5.2"
+    "@types/jest": "npm:^28.1.0"
     "@typescript-eslint/eslint-plugin": "npm:^5.27.0"
     "@typescript-eslint/parser": "npm:^5.27.0"
     danger: "npm:^11.0.7"
@@ -1345,13 +1345,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.5.2":
-  version: 27.5.2
-  resolution: "@types/jest@npm:27.5.2"
+"@types/jest@npm:^28.1.0":
+  version: 28.1.0
+  resolution: "@types/jest@npm:28.1.0"
   dependencies:
     jest-matcher-utils: "npm:^27.0.0"
     pretty-format: "npm:^27.0.0"
-  checksum: df1fb3d09dba7fc004eae976f2f4fd4f9703ad5682b6e1c025b1a4e6b418a11491c0a3589b8b5d2566eda73af69071d1432041c9a31aa33d28d9fe4224c8631b
+  checksum: 6cd071ab663d838954401e2621b4d120e88dad6ff0229077ea9889db13109be91eda8bf831a16d4c757cc7643d64c1cab10278f39470ee7b58332a5b119144f1
   languageName: node
   linkType: hard
 
