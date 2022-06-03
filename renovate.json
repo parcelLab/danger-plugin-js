@@ -14,8 +14,8 @@
       "matchDepTypes": ["devDependencies"]
     }
   ],
-  "prConcurrentLimit": 5,
-  "prHourlyLimit": 3,
+  "prConcurrentLimit": 2,
+  "prHourlyLimit": 1,
   "rangeStrategy": "bump",
   "semanticCommits": "enabled",
   "semanticCommitScope": "{{parentDir}}"
