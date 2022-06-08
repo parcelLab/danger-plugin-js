@@ -1145,7 +1145,7 @@ __metadata:
     "@commitlint/lint": "npm:^17.0.0"
     "@commitlint/types": "npm:^17.0.0"
     "@parcellab/danger-plugin": "npm:*"
-    "@parcellab/eslint-config": "npm:^0.2.2"
+    "@parcellab/eslint-config": "npm:^0.2.13"
     "@types/is-ci": "npm:^3.0.0"
     "@types/jest": "npm:^28.1.1"
     "@typescript-eslint/eslint-plugin": "npm:^5.27.1"
@@ -1172,29 +1172,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@parcellab/eslint-config@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "@parcellab/eslint-config@npm:0.2.2"
+"@parcellab/eslint-config@npm:^0.2.13":
+  version: 0.2.13
+  resolution: "@parcellab/eslint-config@npm:0.2.13"
   dependencies:
-    "@typescript-eslint/parser": "npm:^5.23.0"
+    "@typescript-eslint/parser": "npm:^5.27.0"
     eslint-config-airbnb: "npm:^19.0.4"
     eslint-config-airbnb-typescript: "npm:^17.0.0"
-    eslint-config-prettier: "npm:^8.5.0"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">= 5"
-    eslint: ">= 8"
-    eslint-plugin-import: ">= 2"
-    eslint-plugin-jest: ">= 26"
-    eslint-plugin-jsx-a11y: ">= 6"
-    eslint-plugin-playwright: ">= 0.9"
-    eslint-plugin-prettier: ">= 4"
-    eslint-plugin-promise: ">= 6"
-    eslint-plugin-react: ">= 7"
-    eslint-plugin-react-hooks: ">= 4"
-    eslint-plugin-storybook: ">= 0.5"
-    eslint-plugin-testing-library: ">= 5"
-    eslint-plugin-unicorn: ">= 42"
-    prettier: ">= 2"
+    "@typescript-eslint/eslint-plugin": ">= 5.27.0"
+    eslint: ">= 8.16.0"
+    eslint-config-prettier: ">= 8.5.0"
+    eslint-plugin-import: ">= 2.26.0"
+    eslint-plugin-jest: ">= 26.4.6"
+    eslint-plugin-jsx-a11y: ">= 6.5.1"
+    eslint-plugin-playwright: ">= 0.9.0"
+    eslint-plugin-prettier: ">= 4.0.0"
+    eslint-plugin-promise: ">= 6.0.0"
+    eslint-plugin-react: ">= 7.30.0"
+    eslint-plugin-react-hooks: ">= 4.5.0"
+    eslint-plugin-storybook: ">= 0.5.12"
+    eslint-plugin-testing-library: ">= 5.5.1"
+    eslint-plugin-unicorn: ">= 42.0.0"
+    prettier: ">= 2.6.2"
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
@@ -1212,7 +1212,7 @@ __metadata:
       optional: true
     eslint-plugin-testing-library:
       optional: true
-  checksum: b2987f44f6219576ac99734ec28b010844afbe84428a814a805b8877ea23148922438b0c2a294cb9955d1ef4351705cae6be64ade058c73741ecd0b7b6d9e166
+  checksum: 7876549e3df948eb6fc829ed03a33c7994f2434521989e8a8613ec60be6aeeffafb70dd7dbf76df0d9749d08be34207804a3f1ad347795f9bbe87f2b68eec178
   languageName: node
   linkType: hard
 
@@ -1472,24 +1472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.23.0":
-  version: 5.25.0
-  resolution: "@typescript-eslint/parser@npm:5.25.0"
-  dependencies:
-    "@typescript-eslint/scope-manager": "npm:5.25.0"
-    "@typescript-eslint/types": "npm:5.25.0"
-    "@typescript-eslint/typescript-estree": "npm:5.25.0"
-    debug: "npm:^4.3.4"
-  peerDependencies:
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 42a8aa47f5c8df67f7704ae16a9181a5c31a97fb8b1097ca995425cf09bde4f578184c302811414ab9a7e8e3f5fb675e5b2755380901b961c75aaaee95e0e0f6
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/parser@npm:^5.27.1":
+"@typescript-eslint/parser@npm:^5.27.0, @typescript-eslint/parser@npm:^5.27.1":
   version: 5.27.1
   resolution: "@typescript-eslint/parser@npm:5.27.1"
   dependencies:
