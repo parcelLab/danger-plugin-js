@@ -30,15 +30,15 @@
     "node": ">=v16.15.1"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^17.0.2",
-    "@commitlint/lint": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/lint": "^17.0.3",
     "@commitlint/types": "^17.0.0"
   },
   "peerDependencies": {
     "danger": ">= 11.0.7"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
+    "@commitlint/cli": "^17.0.3",
     "@parcellab/danger-plugin": "*",
     "@parcellab/eslint-config": "^0.2.13",
     "@types/is-ci": "^3.0.0",
